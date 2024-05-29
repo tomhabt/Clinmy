@@ -58,7 +58,7 @@ h6 {
   z-index: 1;
   color: white; /* Ensuring text is visible over the video */
   text-align: center;
-  padding: 20px;
+  /* padding: 0px; */
 }
 /*--------------------------------------------------------------
 # Back to top button
@@ -437,7 +437,7 @@ h6 {
   position: relative;
   height: 70vh;
   top: 10%;
-  padding-top: 60px;
+  padding-top: 30%;
 }
 
 .carousel-item {
