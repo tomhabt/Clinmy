@@ -10,8 +10,14 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #444444;
+  /* font-family: "Open Sans", sans-serif; */
+  /* font-family: 'Playfair Display', serif; */
+  font-family: 'Amatic SC', cursive;
+  line-height: 2.0; /* Adjust the value as needed */
+
+  /* font-family: 'Montserrat', sans-serif; */
+
+  color: rgb(103, 102, 102);
 }
 
 a {
