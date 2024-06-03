@@ -156,6 +156,14 @@ h6 {
 --------------------------------------------------------------*/
 /**
 * Desktop Navigation 
+/* Social links container */
+.nav-bar-social-links {
+  display: flex;
+  gap: -1px;
+  margin: -10px;
+  padding: -10px;
+   /* Space between the social media icons */
+}
 */
 /* Center the navbar container */
 .navbar {
@@ -189,14 +197,10 @@ h6 {
   padding: 10px 20px; /* Adjust padding for better click area */
 }
 
-/* Social links container */
-.nav-bar-social-links {
-  display: flex;
-  gap: 10px; /* Space between the social media icons */
-}
+
 
 /* Individual social media links */
-.nav-bar-social-links a {
+.nav-bar-social-links li a {
   color: #fff; /* White color for the icons */
   text-decoration: none;
   font-size: 20px; /* Adjust the size of the icons */
@@ -208,19 +212,19 @@ h6 {
   text-align: center;
   width: 36px;
   height: 36px;
-  /* transition: 0.9s; Smooth transition for color change on hover */
+   transition: 0.9s; /*Smooth transition for color change on hover */
 }
 
 
 /* Hover effect for social media links */
-.nav-bar-social-links a:hover {
+.nav-bar-social-links li a:hover {
   background: rgb(255,0,0);
   color: #fff;
   text-decoration: none; /* Lighter color on hover */
 }
 
 /* Adjusting icon size */
-.nav-bar-social-links i {
+.nav-bar-social-links li a i {
   font-size: 24px; /* Adjust the size of the icons */
 }
 
@@ -391,7 +395,7 @@ h6 {
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #000;
   overflow-y: auto;
   transition: 0.3s;
 }
