@@ -115,7 +115,9 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 70px;
+  height: 100px;
+  padding-top: 10px;
+  padding-right: 50px;
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
@@ -187,7 +189,7 @@ h6 {
 /* Individual list items styling */
 .navbar li {
   position: relative;
-  margin: 0 15px; /* Adjust spacing between items */
+  margin: 0 10px; /* Adjust spacing between items */
 }
 
 /* Styling for links */
