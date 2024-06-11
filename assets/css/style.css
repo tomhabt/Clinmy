@@ -10,7 +10,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 20px;
   justify-content: center;
   /* font-family: 'Playfair Display', serif; */
@@ -39,7 +39,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Open Sans", sans-serif;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 
 .video-container {
@@ -64,7 +65,7 @@ h6 {
   width: 100%;
   position: relative;
   z-index: 1;
-  color: white; /* Ensuring text is visible over the video */
+  color: rgb(249, 245, 245); /* Ensuring text is visible over the video */
   text-align: center;
   /* padding: 0px; */
 }
@@ -319,7 +320,7 @@ h6 {
   color: #fff;
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -455,6 +456,7 @@ h6 {
   display: block;
 }
 
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -574,8 +576,7 @@ h6 {
   /* margin: 0px; */
   color: #fff;
   animation-delay: 0.8s;
-  border: 2px solid  #FF0000
-;
+  border: 2px solid  #FF0000;
 }
 
 #hero .btn-get-started:hover {
@@ -605,6 +606,7 @@ h6 {
     font-size: 28px;
   }
 }
+
 
 .hero-waves {
   display: block;
@@ -679,7 +681,8 @@ section {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #aaaaaa;
-  font-family: "Open Sans", sans-serif;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 
 .section-title h2::after {
@@ -694,11 +697,225 @@ section {
 .section-title p {
   margin: 0;
   margin: 0;
-  font-size: 36px;
+  font-size: 26px;
   font-weight: 700;
   text-transform: uppercase;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  color: #aba6a6;
+}
+
+
+/*--------------------------------------------------------------
+# Pricing
+--------------------------------------------------------------*/
+.pricing .box {
+  padding: 20px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  /* border: 2px solid  #ff0000 */
+  
+}
+.pricing-number {
+  color: #5c5555;
+  /* background:  #FF0000 */
+}
+
+.pricing h3 {
+  font-weight: 400;
+  margin: -20px -20px 25px -20px;
+  padding: 30px 15px;
+  font-size: 18px;
+  font-weight: 600;
+  
+  color: #9d9898;
+  /* background:  #FF0000 */
+}
+
+.pricing h4 {
+  font-size: 25px;
+  color:  #FF0000
+;
+  font-weight: 600;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  margin-bottom: 20px;
+}
+
+.pricing h4 sup {
+  font-size: 20px;
+  top: -15px;
+  left: -3px;
+}
+
+.pricing h4 span {
+  color: #000;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.pricing ul {
+  padding: 0;
+  list-style: none;
+  color: #444444;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.pricing ul li {
+  padding-bottom: 16px;
+}
+
+.pricing ul i {
+  color:  #FF0000
+;
+  font-size: 18px;
+  padding-right: 4px;
+}
+
+.pricing ul .na {
+  color: #ccc;
+  text-decoration: line-through;
+}
+
+.pricing .btn-wrap {
+  margin: 20px -20px -20px -20px;
+  padding: 20px 15px;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+.pricing .btn-buy {
+  background:  #000000
+;
+  display: inline-block;
+  padding: 8px 35px 10px 35px;
+  border-radius: 50px;
+  color: #fff;
+  transition: none;
+  font-size: 14px;
+  font-weight: 400;
   font-family: "Open Sans", sans-serif;
-  color: #2a2c39;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.pricing .btn-buy:hover {
+  background:  #FF0000;
+}
+
+.pricing .featured {
+  border: 2px solid  #FF0000
+;
+}
+
+.pricing .featured h3 {
+  color: #fff;
+  background:  #FF0000
+;
+}
+
+.pricing .addon {
+  width: 200px;
+  position: absolute;
+  top: 18px;
+  right: -68px;
+  transform: rotate(45deg);
+  z-index: 1;
+  font-size: 14px;
+  padding: 1px 0 3px 0;
+  background:  black
+;
+  color: #fff;
+}
+
+.pricing .advanced {
+  width: 200px;
+  position: absolute;
+  top: 18px;
+  right: -68px;
+  transform: rotate(45deg);
+  z-index: 1;
+  font-size: 14px;
+  padding: 1px 0 3px 0;
+  background:  #FF0000
+;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# benifits
+--------------------------------------------------------------*/
+.benifits .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+
+  color: #fff;
+  background: #000;
+  box-shadow: 0 2px 29px 0 rgb(255,255,255);
+  transition: all 0.4s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+.benifits .icon-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 2px 35px 0 rgb(255,0,0);
+  color: #fff;
+}
+
+.benifits .icon {
+  position: absolute;
+  left: -20px;
+  top: calc(50% - 30px);
+  color: #fff;
+}
+
+.benifits .icon i {
+  font-size: 64px;
+  line-height: 1;
+  transition: 0.5s;
+  color: #fff;
+}
+
+.benifits .title {
+  margin-left: 40px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.benifits .title a {
+  color: rgb(255,0,0);
+  transition: ease-in-out 0.3s;
+}
+
+.benifits .title a:hover {
+  color:  #FF0000
+  
+;
+}
+
+.benifits .description {
+  font-size: 14px;
+  margin-left: 40px;
+  line-height: 24px;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+
+.benifits .pre-title {
+  color: #5c5555;
+  /* background:  #FF0000 */
 }
 
 /*--------------------------------------------------------------
@@ -706,6 +923,7 @@ section {
 --------------------------------------------------------------*/
 .about {
   padding-top: 80px;
+  
 }
 
 .about .content h3 {
@@ -742,7 +960,8 @@ section {
 }
 
 .about .content .btn-learn-more {
-  font-family: "Open Sans", sans-serif;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 1px;
@@ -828,6 +1047,7 @@ section {
 
 .features .tab-content {
   margin-top: 30px;
+  
 }
 
 .features .tab-pane h3 {
@@ -874,7 +1094,8 @@ section {
 }
 
 .cta .cta-btn {
-  font-family: "Open Sans", sans-serif;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
@@ -909,69 +1130,6 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
-.services .icon-box {
-  padding: 30px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-
-  color: #fff;
-  background: #000;
-  box-shadow: 0 2px 29px 0 rgb(255,255,255);
-  transition: all 0.4s ease-in-out;
-  width: 100%;
-  height: 100%;
-}
-
-.services .icon-box:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 2px 35px 0 rgb(255,0,0);
-  color: #fff;
-}
-
-.services .icon {
-  position: absolute;
-  left: -20px;
-  top: calc(50% - 30px);
-  color: #fff;
-}
-
-.services .icon i {
-  font-size: 64px;
-  line-height: 1;
-  transition: 0.5s;
-  color: #fff;
-}
-
-.services .title {
-  margin-left: 40px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-  color: #fff;
-}
-
-.services .title a {
-  color: rgb(255,0,0);
-  transition: ease-in-out 0.3s;
-}
-
-.services .title a:hover {
-  color:  #FF0000
-  
-;
-}
-
-.services .description {
-  font-size: 14px;
-  margin-left: 40px;
-  line-height: 24px;
-  margin-bottom: 0;
-  color: #fff;
-}
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -1257,148 +1415,7 @@ section {
 ;
 }
 
-/*--------------------------------------------------------------
-# Pricing
---------------------------------------------------------------*/
-.pricing .box {
-  padding: 20px;
-  background: #fff;
-  text-align: center;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6);
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-  /* border: 2px solid  #ff0000 */
-  
-}
-.pricingnumber{
-  color: #000;
-  /* background:  #FF0000 */
-}
 
-.pricing h3 {
-  font-weight: 400;
-  margin: -20px -20px 25px -20px;
-  padding: 30px 15px;
-  font-size: 18px;
-  font-weight: 600;
-  
-  color: #000;
-  /* background:  #FF0000 */
-}
-
-
-
-.pricing h4 {
-  font-size: 36px;
-  color:  #FF0000
-;
-  font-weight: 600;
-  font-family: "Open Sans", sans-serif;
-  margin-bottom: 20px;
-}
-
-.pricing h4 sup {
-  font-size: 20px;
-  top: -15px;
-  left: -3px;
-}
-
-.pricing h4 span {
-  color: #000;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.pricing ul {
-  padding: 0;
-  list-style: none;
-  color: #444444;
-  text-align: center;
-  line-height: 20px;
-  font-size: 14px;
-}
-
-.pricing ul li {
-  padding-bottom: 16px;
-}
-
-.pricing ul i {
-  color:  #FF0000
-;
-  font-size: 18px;
-  padding-right: 4px;
-}
-
-.pricing ul .na {
-  color: #ccc;
-  text-decoration: line-through;
-}
-
-.pricing .btn-wrap {
-  margin: 20px -20px -20px -20px;
-  padding: 20px 15px;
-  background: #f8f8f8;
-  text-align: center;
-}
-
-.pricing .btn-buy {
-  background:  #FF0000
-;
-  display: inline-block;
-  padding: 8px 35px 10px 35px;
-  border-radius: 50px;
-  color: #fff;
-  transition: none;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.pricing .btn-buy:hover {
-  background:  #FF0000;
-}
-
-.pricing .featured {
-  border: 2px solid  #FF0000
-;
-}
-
-.pricing .featured h3 {
-  color: #fff;
-  background:  #FF0000
-;
-}
-
-.pricing .addon {
-  width: 200px;
-  position: absolute;
-  top: 18px;
-  right: -68px;
-  transform: rotate(45deg);
-  z-index: 1;
-  font-size: 14px;
-  padding: 1px 0 3px 0;
-  background:  black
-;
-  color: #fff;
-}
-
-.pricing .advanced {
-  width: 200px;
-  position: absolute;
-  top: 18px;
-  right: -68px;
-  transform: rotate(45deg);
-  z-index: 1;
-  font-size: 14px;
-  padding: 1px 0 3px 0;
-  background:  #FF0000
-;
-  color: #fff;
-}
 
 /*--------------------------------------------------------------
 # F.A.Q
@@ -1759,6 +1776,31 @@ section {
   text-align: center;
   padding: 30px 0;
 }
+
+/* Center the items within the navbar */
+.footer-links ul {
+  display: flex; /* Display the list items in a row */
+  justify-content: left; /* Center the list items */
+  align-items: left; /* Align items vertically in the center */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  list-style: none; /* Remove bullet points */
+}
+
+/* Individual list items styling */
+.footer-links li {
+  position: relative;
+  margin: 0 10px; /* Adjust spacing between items */
+}
+
+/* Styling for links */
+.footer-links li a {
+  text-decoration: none;  /* Remove underline from links */
+  color: #3f63da; /* Adjust the color as needed */
+  padding: 10px 20px; /* Adjust padding for better click area */
+}
+
+
 
 #footer h3 {
   font-size: 36px;
