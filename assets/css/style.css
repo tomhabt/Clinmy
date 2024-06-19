@@ -849,9 +849,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# benifits
+# benefits
 --------------------------------------------------------------*/
-.benifits .icon-box {
+.benefits .icon-box {
   padding: 30px;
   position: relative;
   overflow: hidden;
@@ -865,27 +865,27 @@ section {
   height: 100%;
 }
 
-.benifits .icon-box:hover {
+.benefits .icon-box:hover {
   transform: translateY(-10px);
   box-shadow: 0 2px 35px 0 rgb(255,0,0);
   color: #fff;
 }
 
-.benifits .icon {
+.benefits .icon {
   position: absolute;
   left: -20px;
   top: calc(50% - 30px);
   color: #fff;
 }
 
-.benifits .icon i {
+.benefits .icon i {
   font-size: 64px;
   line-height: 1;
   transition: 0.5s;
   color: #fff;
 }
 
-.benifits .title {
+.benefits .title {
   margin-left: 40px;
   font-weight: 700;
   margin-bottom: 15px;
@@ -893,18 +893,18 @@ section {
   color: #fff;
 }
 
-.benifits .title a {
+.benefits .title a {
   color: rgb(255,0,0);
   transition: ease-in-out 0.3s;
 }
 
-.benifits .title a:hover {
+.benefits .title a:hover {
   color:  #FF0000
   
 ;
 }
 
-.benifits .description {
+.benefits .description {
   font-size: 14px;
   margin-left: 40px;
   line-height: 24px;
@@ -913,7 +913,7 @@ section {
 }
 
 
-.benifits .pre-title {
+.benefits .pre-title {
   color: #5c5555;
   /* background:  #FF0000 */
 }
@@ -1772,83 +1772,306 @@ section {
 #footer {
   background: #14151c;
   color: #fff;
-  font-size: 14px;
+  font-size: 17px;
   text-align: center;
-  padding: 30px 0;
 }
 
-/* Center the items within the navbar */
-.footer-links ul {
-  display: flex; /* Display the list items in a row */
-  justify-content: left; /* Center the list items */
-  align-items: left; /* Align items vertically in the center */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  list-style: none; /* Remove bullet points */
-}
-
-/* Individual list items styling */
-.footer-links li {
-  position: relative;
-  margin: 0 10px; /* Adjust spacing between items */
-}
-
-/* Styling for links */
-.footer-links li a {
-  text-decoration: none;  /* Remove underline from links */
-  color: #3f63da; /* Adjust the color as needed */
-  padding: 10px 20px; /* Adjust padding for better click area */
-}
-
-
-
-#footer h3 {
-  font-size: 36px;
-  font-weight: 700;
+.footer {
+  background-color: #000;
   color: #fff;
+
+
+}
+.footer-wave-svg {
+  background-color: transparent;
+  display: block;
+  height: 30px;
   position: relative;
-  font-family: "Open Sans", sans-serif;
-  padding: 0;
-  margin: 0 0 15px 0;
+  top: -1px;
+  width: 100%;
+}
+.footer-wave-path {
+  fill: #fffff2;
 }
 
-#footer p {
-  font-size: 15;
-  font-style: italic;
-  padding: 0;
-  margin: 0 0 40px 0;
+.footer-content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1230px;
+  padding: 40px 15px 450px;
+  position: relative;
 }
 
-#footer .social-links {
-  margin: 0 0 40px 0;
+.footer-content-column {
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  color: #fff;
 }
 
-#footer .social-links a {
-  font-size: 18px;
+.footer-content-column ul li a {
+color: #fff;
+text-decoration: none;
+}
+
+.footer-logo-link {
   display: inline-block;
-  background:  #FF0000
-;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
+}
+.footer-menu {
+  margin-top: 30px;
 }
 
-#footer .social-links a:hover {
-  background: #bd5102;
+.footer-menu-name {
+  color: #fffff2;
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: .1em;
+  line-height: 18px;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+.footer-menu-list {
+  list-style: none;
+  margin-bottom: 0;
+  margin-top: 10px;
+  padding-left: 0;
+}
+.footer-menu-list li {
+  margin-top: 5px;
+}
+
+.footer-call-to-action-description {
+  color: #fffff2;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.footer-call-to-action-button:hover {
+  background-color: #fffff2;
+  color: #f00;
+}
+.button:last-of-type {
+  margin-right: 0;
+}
+.footer-call-to-action-button {
+  background-color: #f00;
+  border-radius: 21px;
+  color: #fffff2;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .1em;
+  line-height: 18px;
+  padding: 12px 30px;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color .2s;
+  cursor: pointer;
+  position: relative;
+}
+.footer-call-to-action {
+  margin-top: 30px;
+}
+.footer-call-to-action-title {
+  color: #fffff2;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: .1em;
+  line-height: 18px;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+.footer-call-to-action-link-wrapper {
+  margin-bottom: 0;
+  margin-top: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+.footer-call-to-action-link-wrapper a {
   color: #fff;
   text-decoration: none;
 }
 
-#footer .copyright {
-  margin: 0 0 5px 0;
+
+
+
+
+.footer-social-links {
+  bottom: 0;
+  height: 54px;
+  position: absolute;
+  right: 0;
+  width: 236px;
 }
 
-#footer .credits {
+.footer-social-amoeba-svg {
+  height: 54px;
+  left: -100px;
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 236px;
+}
+
+.footer-social-amoeba-path {
+  fill: #f00;
+}
+
+.footer-social-link.linkedin {
+  height: 26px;
+  left: -103px;
+  top: 11px;
+  width: 48px;
+}
+
+.footer-social-link {
+  display: block;
+  padding: 10px;
+  position: absolute;
+}
+
+.hidden-link-text {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px,1px,1px,1px);
+  -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+  clip-path: inset(0px 0px 99.9% 99.9%);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  border: 0;
+  top: 50%;
+}
+
+.footer-social-icon-svg {
+  display: block;
+}
+
+.footer-social-icon-path {
+  fill: #fffff2;
+  transition: fill .2s;
+}
+
+.footer-social-link.twitter {
+  height: 28px;
+  left: -42px;
+  top: 3px;
+  width: 48px;
+}
+
+.footer-social-link.youtube {
+  height: 24px;
+  left: 23px;
+  top: 12px;
+  width: 38px;
+}
+
+.footer-social-link.instagram {
+  height: 34px;
+  left: 75px;
+  top: 7px;
+  width: 18px;
+}
+
+.footer-copyright {
+  background-color: #F00;
+  color: #fff;
+  padding: 15px 50px;
+  margin-bottom: -100px;
+text-align: center;
+}
+
+.footer-copyright-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+.footer-copyright-text {
+color: #fff;
   font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.footer-copyright-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+/* Media Query For different screens */
+@media (min-width:320px) and (max-width:479px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+.footer-content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1230px;
+  padding: 40px 15px 1050px;
+  position: relative;
+}
+}
+@media (min-width:480px) and (max-width:599px)  { /* smartphones, Android phones, landscape iPhone */
+.footer-content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1230px;
+  padding: 40px 15px 1050px;
+  position: relative;
+}
+}
+@media (min-width:600px) and (max-width: 800px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+.footer-content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1230px;
+  padding: 40px 15px 1050px;
+  position: relative;
+}
+}
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */
+
+}
+
+
+
+
+@media (min-width: 760px) {
+.footer-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1230px;
+    padding: 40px 15px 450px;
+    position: relative;
+}
+
+.footer-wave-svg {
+    height: 50px;
+}
+
+.footer-content-column {
+    width: 24.99%;
+}
+}
+@media (min-width: 568px) {
+/* .footer-content-column {
+    width: 49.99%;
+} */
 }
